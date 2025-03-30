@@ -1,5 +1,5 @@
 
-# 🚀 Query Runtime Predictor
+# Query Runtime Predictor
 
 A machine learning-based system to predict the runtime of SQL queries executed on PostgreSQL, built using TPC-H benchmark queries.
 
