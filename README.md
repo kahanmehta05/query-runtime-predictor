@@ -10,11 +10,8 @@ A machine learning-based system to predict the runtime of SQL queries executed o
 ```
 query-runtime-predictor/
 ├── data/
-│   ├── final_features_sample.csv        # Extracted features from queries
-│   ├── final_features_extended.csv      # Features from extended queries
-│   ├── final_features_all.csv           # Merged dataset (1–222 queries)
+│   ├── final_features_sample.csv        # Extracted features from all queries
 │   └── processed/                       # JSON plan files (1–22)
-│   └── processed_extended/              # JSON plan files (23–222)
 ├── db/
 │   ├── create_tpch_schema.sql
 │   ├── load_tpch_data.sql
@@ -22,9 +19,6 @@ query-runtime-predictor/
 ├── scripts/
 │   ├── extract_runtime_features.py      # Runs query and logs plan (JSON)
 │   ├── extract_features_sample.py       # Extracts features → CSV
-│   ├── run_all_queries.py
-│   ├── run_missing_queries.py
-│   └── split_new_queries.py
 ├── notebooks/
 │   └── ...                              # For model training/analysis
 ├── models/
@@ -52,12 +46,6 @@ source venv/bin/activate
 ```bash
 pip install pandas psycopg2-binary psutil
 ```
-
-If `requirements.txt` exists:
-```bash
-pip install -r requirements.txt
-```
-
 ---
 
 ## 🛠 PostgreSQL Setup
