@@ -11,7 +11,6 @@ A machine learning-based system to predict the runtime of SQL queries executed o
 query-runtime-predictor/
 ├── data/
 │   ├── final_features_sample.csv        # Extracted features from all queries
-│   └── processed/                       # JSON plan files (1–22)
 ├── db/
 │   ├── create_tpch_schema.sql
 │   ├── load_tpch_data.sql
